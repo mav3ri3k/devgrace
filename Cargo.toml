@@ -1,0 +1,19 @@
+[package]
+name = "devgrace"
+version = "0.1.0"
+edition = "2021"
+description = "Count how polite you are to your coding agents"
+
+[[bin]]
+name = "devgrace"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+glob = "0.3"
+regex = "1"
+colored = "2"
+dirs = "5"
+rusqlite = { version = "0.31", features = ["bundled"] }
+rayon = "1.10"
